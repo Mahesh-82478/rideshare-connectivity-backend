@@ -1,3 +1,4 @@
+
 package com.rideshare.backend.controller;
 
 import com.rideshare.backend.entity.RideRequest;
@@ -11,8 +12,8 @@ import java.util.List;
 @RestController
 @RequestMapping("/api/ride-requests")
 @CrossOrigin(origins = {
-    "http://localhost:5173",
-    "https://rideshare-connectivity-frontend.vercel.app"
+        "http://localhost:5173",
+        "https://rideshare-connectivity-frontend.vercel.app"
 })
 public class RideRequestController {
 
@@ -29,7 +30,10 @@ public class RideRequestController {
         RideRequest savedRequest =
                 rideRequestService.createRequest(rideRequest);
 
-        return new ResponseEntity<>(savedRequest, HttpStatus.CREATED);
+        return new ResponseEntity<>(
+                savedRequest,
+                HttpStatus.CREATED
+        );
     }
 
     @GetMapping

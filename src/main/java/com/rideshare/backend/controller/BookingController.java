@@ -1,3 +1,4 @@
+
 package com.rideshare.backend.controller;
 
 import com.rideshare.backend.entity.Booking;
@@ -11,8 +12,8 @@ import java.util.List;
 @RestController
 @RequestMapping("/api/bookings")
 @CrossOrigin(origins = {
-    "http://localhost:5173",
-    "https://rideshare-connectivity-frontend.vercel.app"
+        "http://localhost:5173",
+        "https://rideshare-connectivity-frontend.vercel.app"
 })
 public class BookingController {
 
